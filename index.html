@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/78d7cdab33.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    
+      <div class="row nav-menu">
+        <div class="col" id="search">
+          <input type="text" name="search" placeholder="Search..." id="search-box">
+          <button id="clickme"><i id="icon" class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="col" id="time-date">
+          <div class="time" id="time">12:00<span id="am-pm">PM</span></div>
+          <div class="date" id="date">Wednesday 26 July</div>
+        </div>
+      </div>
+    
+
+    <!-- weather data -->
+
+    <div class="row container text-center">
+        <div class="col live-data-container">
+            
+                <div class="city">
+                    <p id="city-block">Delhi</p>
+                </div>
+                <div class="row live-data">
+                    <div class="col" id="live-temp">26 &#176;c</div>
+                    <div><img class="col" src="" alt="icon" id="live-temp-icon" /></div>
+                    <p class="col" id="live-condition">Condition</p>
+                </div>
+            
+        </div>
+
+      <div class="col other-data">
+        <div class="other-data-items">
+          <div class="weather-item">
+            <p>Humidity</p>
+            <p id="humidity">${humidity}</p>
+          </div>
+          <div class="weather-item">
+            <p>Pressure</p>
+            <p id="pressure">${pressure_mb}</p>
+          </div>
+          <div class="weather-item">
+            <p>Wind Speed</p>
+            <p id="wind">${wind_kph}</p>
+          </div>
+          <div class="weather-item">
+            <p>Sunrise</p>
+            <p id="sunrise">${sunrise}</p>
+          </div>
+          <div class="weather-item">
+            <p>Sunset</p>
+            <p id="sunset">${sunset}</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="outer-container">
+      <!-- future-forecast -->
+    <div class="row future-data-container">
+      <!-- day-1 data -->
+      <div class="weather-forecast-item col">
+        <div class="day" id="day1-date">Today</div>
+        <img src="" alt="weather icon" class="w-icon" id="day1-icon" />
+        <div class="temp" id="day1-max-temp">23</div>
+        <div class="temp" id="day1-min-temp">32</div>
+      </div>
+      <!-- day-2 data -->
+      <div class="weather-forecast-item col">
+        <div class="day" id="day2-date"></div>
+        <img src="" alt="weather icon" class="w-icon" id="day2-icon" />
+        <div class="temp" id="day2-max-temp">23</div>
+        <div class="temp" id="day2-min-temp">32</div>
+      </div>
+      <!-- day-3 data -->
+      <div class="weather-forecast-item col">
+        <div class="day" id="day3-date"></div>
+        <img src="" alt="weather icon" class="w-icon" id="day3-icon" />
+        <div class="temp" id="day3-max-temp">23</div>
+        <div class="temp" id="day3-min-temp">32</div>
+      </div>
+      <!-- day-4 data -->
+      <div class="weather-forecast-item col">
+        <div class="day" id="day4-date"></div>
+        <img src="" alt="weather icon" class="w-icon" id="day4-icon" />
+        <div class="temp" id="day4-max-temp">23</div>
+        <div class="temp" id="day4-min-temp">32</div>
+      </div>
+    </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

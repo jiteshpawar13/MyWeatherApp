@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:url('https://plus.unsplash.com/premium_photo-1673697239589-28e63df0b4e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    
+    
+    background-size: cover;
+    overflow: hidden;
+   
+    font-family: 'Poppins';
+    overflow-y: scroll;
+    padding: 20px 70px;
+}
+
+#search-box {
+    font-size: 1rem;
+    font-weight: 400;
+    top: 9px;
+    left: 2.5%;
+    width: 40%;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+}
+
+#search button {
+    width: 55px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.container .other-data {
+    background: rgba(24, 24, 27, 0.6);
+    margin: 40px;
+    padding: 25px 25px;
+    border-radius: 10px;
+    border: #000 2px solid;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-data-container {
+    margin: 40px;
+}
+
+#city-block {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.live-data #live-temp {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.live-data #live-temp-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.future-data-container {
+    text-align: center;
+    padding: 70px;
+    
+}
+
+.weather-forecast-item {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 20px;
+    height: 200px;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(24, 24, 27, 0.6);
+}
+
+
+@media only screen and (max-width: 400px) {
+    #search-box {
+        padding: 5;
+        margin: 0;
+        width: 200px;
+        height: 35px;
+    }
+
+    #search button {
+        height: 35px;
+        width: 35px;
+    }
+    #city-block {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .live-data #live-temp {
+        font-size: 26px;
+    }
+    .live-data #live-temp-icon {
+        height: 40px;
+        width: 40px;
+    }
+    .live-data #live-condition {
+        font-size: 14px;
+    }
+ 
+    .container .other-data-items {
+        width: 170px;
+        
+    }
+    .weather-item {
+        font-size: 14px;
+    }
+    .container .other-data {
+        
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+    .nav-menu #time-date {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .future-data-container {
+        width: 400px;
+        padding-left: 0;
+        padding-right: 120px;
+    }
+    .weather-forecast-item {
+        font-size: 16px;
+    }
+}
