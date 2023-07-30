@@ -97,11 +97,6 @@ function showWeatherData (data) {
 
 
 
-
-
-
-
-
     liveTemp.innerHTML = `
     ${livetemp}&#176; c
     `
