@@ -46,7 +46,7 @@ setInterval(() => {
  const searchBox = document.querySelector("#search input");
  const searchBtn = document.querySelector("#search button");
 
- const apiKey = "a441c09c95f64c5489d95000232107";
+ const apiKey = "eb65fde9c43b4147ad4181643232308";
  const apiUrl = "https://api.weatherapi.com/v1/forecast.json?&days=4&aqi=no&alerts=yes"
 
  async function checkWeather(city) {
@@ -81,19 +81,19 @@ function showWeatherData (data) {
     let day1icon = data.forecast.forecastday[0].day.condition.icon;
     let day2icon = data.forecast.forecastday[1].day.condition.icon;
     let day3icon = data.forecast.forecastday[2].day.condition.icon;
-    let day4icon = data.forecast.forecastday[3].day.condition.icon;
+   // let day4icon = data.forecast.forecastday[3].day.condition.icon;
     let day1maxtemp = Math.round(data.forecast.forecastday[0].day.maxtemp_c);
     let day1mintemp = Math.round(data.forecast.forecastday[0].day.mintemp_c);
     let day2maxtemp = Math.round(data.forecast.forecastday[1].day.maxtemp_c);
     let day2mintemp = Math.round(data.forecast.forecastday[1].day.mintemp_c);
     let day3maxtemp = Math.round(data.forecast.forecastday[2].day.maxtemp_c);
     let day3mintemp = Math.round(data.forecast.forecastday[2].day.mintemp_c);
-    let day4maxtemp = Math.round(data.forecast.forecastday[3].day.maxtemp_c);
-    let day4mintemp = Math.round(data.forecast.forecastday[3].day.mintemp_c);
+   // let day4maxtemp = Math.round(data.forecast.forecastday[3].day.maxtemp_c);
+   // let day4mintemp = Math.round(data.forecast.forecastday[3].day.mintemp_c);
     let date1 = data.forecast.forecastday[0].date;
     let date2 = data.forecast.forecastday[1].date;
     let date3 = data.forecast.forecastday[2].date;
-    let date4 = data.forecast.forecastday[3].date;
+   // let date4 = data.forecast.forecastday[3].date;
 
 
 
@@ -110,7 +110,7 @@ function showWeatherData (data) {
     day1Icon.src = `${day1icon}`
     day2Icon.src = `${day2icon}`
     day3Icon.src = `${day3icon}`
-    day4Icon.src = `${day4icon}`
+   // day4Icon.src = `${day4icon}`
 
     day1MaxTemp.innerHTML = `
     Day ${day1maxtemp} &#176; c
@@ -130,12 +130,12 @@ function showWeatherData (data) {
     day3MinTemp.innerHTML = `
     Night ${day3mintemp} &#176; c
     `
-    day4MaxTemp.innerHTML = `
-    Day ${day4maxtemp} &#176; c
-    `
-    day4MinTemp.innerHTML = `
-    Night ${day4mintemp} &#176; c
-    `
+    // day4MaxTemp.innerHTML = `
+    // Day ${day4maxtemp} &#176; c
+    // `
+    // day4MinTemp.innerHTML = `
+    // Night ${day4mintemp} &#176; c
+    // `
 
   
     day2Date.innerHTML = `
@@ -144,9 +144,9 @@ function showWeatherData (data) {
     day3Date.innerHTML = `
     ${date3}
     `
-    day4Date.innerHTML = `
-    ${date4}
-    `
+    // day4Date.innerHTML = `
+    // ${date4}
+    // `
 }
 
 
